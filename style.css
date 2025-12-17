@@ -1,74 +1,126 @@
+/* =====================
+   Brand variables
+   ===================== */
+
 :root {
+  /* Colors */
+  --color-primary: #4A354B;        /* Deep Plum */
+  --color-accent-blue: #2F4A6D;    /* Slate Blue */
+  --color-accent-brown: #54382A;   /* Rich Umber */
+  --color-neutral-gray: #B0B3B8;   /* Stone Gray */
+  --color-neutral-taupe: #8B7663;  /* Warm Taupe */
+  --color-highlight-gold: #C9A867; /* Soft Gold */
+
+  --color-background: #0F0F12;
+  --color-text: #E6E6E6;
+
+  /* Fonts */
   --font-header: 'BBH Hegarty', 'Space Grotesk', 'Inter', sans-serif;
   --font-body: 'Inter', sans-serif;
 }
 
-body {
-  font-family: var(--font-body);
-  font-weight: 400;
-  color: #2E2E2E;
+/* =====================
+   Base styles
+   ===================== */
+
+* {
+  box-sizing: border-box;
 }
 
-h1, h2, h3 {
-  font-family: var(--font-header);
-  font-weight: 600;
-  letter-spacing: -0.02em;
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  font-weight: 400;
+  background-color: var(--color-background);
+  color: var(--color-text);
+  line-height: 1.6;
 }
 
 .container {
-  max-width: 800px;
-  padding: 60px 24px;
-  margin: auto;
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 4rem 1.5rem;
 }
 
-.hero h1 {
-  font-size: 2.5rem;
-  margin-bottom: 0.25rem;
+/* =====================
+   Typography
+   ===================== */
+
+h1, h2 {
+  font-family: var(--font-header);
+  letter-spacing: -0.02em;
+  margin-bottom: 0.75rem;
 }
 
-.hero h2 {
-  font-weight: 400;
-  color: #555;
-  margin-top: 0;
+h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--color-primary);
 }
 
-.intro {
-  margin: 1.5rem 0;
-  font-size: 1.05rem;
+h2 {
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: var(--color-accent-blue);
 }
 
-.links a {
-  margin-right: 16px;
-  color: #7c3aed; /* subtle “spice” accent */
+p {
+  max-width: 60ch;
+  color: var(--color-neutral-gray);
+}
+
+.tagline {
+  font-size: 1.1rem;
+  color: var(--color-neutral-taupe);
+}
+
+/* =====================
+   Sections
+   ===================== */
+
+section {
+  margin-top: 3.5rem;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+ul li {
+  padding-left: 1.2rem;
+  position: relative;
+  margin-bottom: 0.75rem;
+  color: var(--color-neutral-gray);
+}
+
+ul li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: var(--color-highlight-gold);
+}
+
+/* =====================
+   Links
+   ===================== */
+
+a {
+  color: var(--color-highlight-gold);
   text-decoration: none;
   font-weight: 500;
 }
 
-section {
-  margin-top: 48px;
+a:hover {
+  text-decoration: underline;
 }
 
-h3 {
-  font-size: 1.4rem;
-  border-bottom: 2px solid #eee;
-  padding-bottom: 6px;
-}
-
-.role h4 {
-  margin-bottom: 4px;
-}
-
-.role span {
-  font-size: 0.9rem;
-  color: #666;
-}
-
-ul {
-  padding-left: 20px;
-}
+/* =====================
+   Footer
+   ===================== */
 
 footer {
-  margin-top: 60px;
-  font-size: 0.85rem;
-  color: #777;
+  margin-top: 4rem;
+  font-size: 0.9rem;
+  color: var(--color-neutral-gray);
 }
