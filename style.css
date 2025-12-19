@@ -11,8 +11,11 @@
   --color-neutral-taupe: #8B7663;  /* Warm Taupe */
   --color-highlight-gold: #C9A867; /* Soft Gold */
 
-  --color-background: #0F0F12;
-  --color-text: #E6E6E6;
+  --color-background-dark: #0F0F12;
+  --color-background-soft: #15151B;
+
+  --color-text-primary: #F2F2F2;
+  --color-text-secondary: #C9CCD1;
 
   /* Fonts */
   --font-header: 'BBH Hegarty', 'Space Grotesk', 'Inter', sans-serif;
@@ -31,15 +34,18 @@ body {
   margin: 0;
   font-family: var(--font-body);
   font-weight: 400;
-  background-color: var(--color-background);
-  color: var(--color-text);
+  background:
+    radial-gradient(800px 500px at 10% -10%, #1c1420 0%, transparent 50%),
+    radial-gradient(800px 500px at 110% 10%, #182033 0%, transparent 45%),
+    linear-gradient(180deg, var(--color-background-dark), var(--color-background-soft));
+  color: var(--color-text-primary);
   line-height: 1.6;
 }
 
 .container {
   max-width: 860px;
   margin: 0 auto;
-  padding: 4rem 1.5rem;
+  padding: 4.5rem 1.5rem 3.5rem;
 }
 
 /* =====================
@@ -53,25 +59,26 @@ h1, h2 {
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: clamp(2.6rem, 5vw, 3.2rem);
   font-weight: 700;
-  color: var(--color-primary);
+  color: var(--color-text-primary);
 }
 
 h2 {
-  font-size: 1.75rem;
+  font-size: 1.6rem;
   font-weight: 600;
-  color: var(--color-accent-blue);
+  color: var(--color-text-primary);
 }
 
 p {
   max-width: 60ch;
-  color: var(--color-neutral-gray);
+  color: var(--color-text-secondary);
 }
 
 .tagline {
   font-size: 1.1rem;
   color: var(--color-neutral-taupe);
+  max-width: 48ch;
 }
 
 /* =====================
@@ -79,19 +86,39 @@ p {
    ===================== */
 
 section {
-  margin-top: 3.5rem;
+  margin-top: 4rem;
+  padding-top: 0.5rem;
 }
+
+section h2 {
+  position: relative;
+}
+
+section h2::after {
+  content: "";
+  display: block;
+  width: 2.5rem;
+  height: 2px;
+  margin-top: 0.75rem;
+  background-color: var(--color-highlight-gold);
+  opacity: 0.6;
+}
+
+/* =====================
+   Lists
+   ===================== */
 
 ul {
   list-style: none;
   padding-left: 0;
+  margin-top: 1.25rem;
 }
 
 ul li {
-  padding-left: 1.2rem;
+  padding-left: 1.4rem;
   position: relative;
   margin-bottom: 0.75rem;
-  color: var(--color-neutral-gray);
+  color: var(--color-text-secondary);
 }
 
 ul li::before {
@@ -99,6 +126,8 @@ ul li::before {
   position: absolute;
   left: 0;
   color: var(--color-highlight-gold);
+  font-size: 1.2rem;
+  line-height: 1;
 }
 
 /* =====================
@@ -120,7 +149,9 @@ a:hover {
    ===================== */
 
 footer {
-  margin-top: 4rem;
-  font-size: 0.9rem;
+  margin-top: 4.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  font-size: 0.85rem;
   color: var(--color-neutral-gray);
 }
