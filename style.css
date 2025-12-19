@@ -3,24 +3,27 @@
    ===================== */
 
 :root {
-  /* Colors */
-  --color-primary: #4A354B;        /* Deep Plum */
-  --color-accent-blue: #2F4A6D;    /* Slate Blue */
-  --color-accent-brown: #54382A;   /* Rich Umber */
-  --color-neutral-gray: #B0B3B8;   /* Stone Gray */
-  --color-neutral-taupe: #8B7663;  /* Warm Taupe */
-  --color-highlight-gold: #C9A867; /* Soft Gold */
+  /* Base & text */
+  --color-bg: #1B1B1B;              /* Eerie Black */
+  --color-text-primary: #F2F2F2;    /* Light text for readability */
+  --color-text-secondary: #C9CCD1;  /* Soft secondary text */
 
-  --color-background-dark: #0F0F12;
-  --color-background-soft: #15151B;
+  /* Headings */
+  --color-header: #67023D;          /* Imperial Purple */
 
-  --color-text-primary: #F2F2F2;
-  --color-text-secondary: #C9CCD1;
+  /* Accents */
+  --color-accent-red: #C60C31;      /* NCS Red */
+  --color-accent-red-strong: #F61115; /* Vivid Red for hover/emphasis */
+
+  /* Panels / highlights */
+  --color-panel: #512888;           /* KSU Purple */
+  --color-divider: #9A54B3;         /* Purple Plum */
 
   /* Fonts */
   --font-header: 'BBH Hegarty', 'Space Grotesk', 'Inter', sans-serif;
   --font-body: 'Inter', sans-serif;
 }
+
 
 /* =====================
    Base styles
