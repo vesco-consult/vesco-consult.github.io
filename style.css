@@ -8,7 +8,7 @@
   --color-text-secondary: #C9CCD1;
 
   /* Headings */
-  --color-header: #F61115; /* Vivid Red */
+  --color-header: #ffffff;          /* White */
    --color-headerwhite: #ffffff;          /* White */
 
   /* Accents */
@@ -54,7 +54,7 @@ body {
    ===================== */
 .logo {
   display: flex;
-  justify-content: right; /* right horizontally */
+  justify-content: flex-end; /* right horizontally */
   align-items: center;     /* centers vertically if needed */
   margin-bottom: 0.5rem;
 }
