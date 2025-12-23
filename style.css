@@ -17,7 +17,7 @@
 
   /* Panels / highlights */
   --color-panel: #1B1B1B;              /* Eerie Black */
-  --color-divider: #9A54B3;         /* Purple Plum */
+  --color-divider:  #C60C31;      /* NCS Red */
 
   /* Fonts */
   --font-header: 'BBH Hegarty', 'Space Grotesk', 'Inter', sans-serif;
@@ -54,14 +54,14 @@ body {
    ===================== */
 .logo {
   display: flex;
-  justify-content: flex-end; /* right horizontally */
+  justify-content: right; /* right horizontally */
   align-items: center;     /* centers vertically if needed */
   margin-bottom: 0.5rem;
 }
 
 /* Logo image */
 .logo-img {
-  max-height: 200px;        /* adjust as needed */
+  max-height: 100px;        /* adjust as needed */
   display: block;
 }
 
