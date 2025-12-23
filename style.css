@@ -4,16 +4,15 @@
 :root {
   /* Base & text */
   --color-bg: #1B1B1B;              /* Eerie Black */
-  --color-text-primary: #F2F2F2;    /* Light text for readability */
-  --color-text-secondary: #C9CCD1;  /* Soft secondary text */
+  --color-text-primary: #F2F2F2;
+  --color-text-secondary: #C9CCD1;
 
   /* Headings */
   --color-header: #67023D;          /* Imperial Purple */
-   --color-heading: #ffffff;          /* White */
 
   /* Accents */
   --color-accent-red: #C60C31;      /* NCS Red */
-  --color-accent-red-strong: #F61115; /* Vivid Red for hover/emphasis */
+  --color-accent-red-strong: #F61115; /* Vivid Red */
 
   /* Panels / highlights */
   --color-panel: #512888;           /* KSU Purple */
@@ -48,13 +47,30 @@ body {
   margin: 0 auto;
   padding: 4.5rem 1.5rem 3.5rem;
 }
-/* Logo */
-.logo-img {
-  max-height: 250px;
-  display: block;
+
+/* =====================
+   Logo
+   ===================== */
+.logo {
+  display: flex;
+  align-items: center;
   margin-bottom: 1rem;
 }
 
+.logo-symbol {
+  font-family: var(--font-header);
+  font-weight: 700;
+  font-size: 2.2rem;
+  color: var(--color-accent-red);
+  margin-right: 0.5rem;
+}
+
+.logo-text {
+  font-family: var(--font-header);
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: var(--color-header);
+}
 
 /* =====================
    Typography
@@ -68,7 +84,7 @@ h1, h2 {
 h1 {
   font-size: clamp(2.6rem, 5vw, 3.2rem);
   font-weight: 700;
-  color: var(--color-heading);
+  color: var(--color-header);
 }
 
 h2 {
@@ -94,10 +110,6 @@ p {
 section {
   margin-top: 4rem;
   padding-top: 0.5rem;
-}
-
-section h2 {
-  position: relative;
 }
 
 section h2::after {
@@ -149,7 +161,7 @@ a:hover {
 }
 
 /* =====================
-   Panels / Cards
+   Cards / Panels
    ===================== */
 .card {
   background-color: var(--color-panel);
