@@ -52,10 +52,17 @@ body {
 /* =====================
    Logo
    ===================== */
-.logo-img {
-  max-height: 250px;
-  display: block;
+.logo {
+  display: flex;
+  justify-content: center; /* centers horizontally */
+  align-items: center;     /* centers vertically if needed */
   margin-bottom: 1rem;
+}
+
+/* Logo image */
+.logo-img {
+  max-height: 300px;        /* adjust as needed */
+  display: block;
 }
 
 
