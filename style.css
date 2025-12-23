@@ -9,6 +9,7 @@
 
   /* Headings */
   --color-header: #67023D;          /* Imperial Purple */
+   --color-heading: #ffffff;          /* White */
 
   /* Accents */
   --color-accent-red: #C60C31;      /* NCS Red */
@@ -67,7 +68,7 @@ h1, h2 {
 h1 {
   font-size: clamp(2.6rem, 5vw, 3.2rem);
   font-weight: 700;
-  color: var(--color-header);
+  color: var(--color-heading);
 }
 
 h2 {
