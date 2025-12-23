@@ -61,7 +61,7 @@ body {
 
 /* Logo image */
 .logo-img {
-  max-height: 300px;        /* adjust as needed */
+  max-height: 200px;        /* adjust as needed */
   display: block;
 }
 
