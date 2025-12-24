@@ -87,6 +87,12 @@ h2 {
   color: var(--color-header);
 }
 
+h3 {
+  font-size: 1rem;
+  font-weight: 300;
+  color: var(--color-header);
+}
+
 p {
   max-width: 60ch;
   color: var(--color-text-secondary);
