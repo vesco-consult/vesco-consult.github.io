@@ -18,6 +18,7 @@
   /* Panels / highlights */
   --color-panel: #1B1B1B;              /* Eerie Black */
   --color-divider: #67023d;       /* Imperial Purple */
+   --color-divider2: #F61115; /* Vivid Red */
  
   /* Fonts */
   --font-header: 'BBH Hegarty', 'Space Grotesk', 'Inter', sans-serif;
@@ -173,6 +174,23 @@ a:hover {
 }
 
 .card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.45);
+}
+
+/* =====================
+   Cards / SideProjects
+   ===================== */
+.card2 {
+  background-color: var(--color-panel);
+  border-left: 2px solid var(--color-divider2);
+  border-radius: 16px;
+  padding: 1.5rem;
+  margin-top: 1.5rem;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card2:hover {
   transform: translateY(-4px);
   box-shadow: 0 12px 32px rgba(0, 0, 0, 0.45);
 }
