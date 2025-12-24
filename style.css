@@ -62,7 +62,7 @@ body {
 /* Logo image */
 .logo-img {
   max-height: 150px;        /* adjust as needed */
-  display: block;
+  display: inline-block;
 }
 
 
