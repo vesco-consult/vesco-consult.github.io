@@ -32,6 +32,35 @@
   box-sizing: border-box;
 }
 
+/* Name handling */
+.name {
+  display: block;
+  text-align: center;
+}
+
+/* Prevent inline wrapping issues */
+.name span {
+  display: inline-block;
+  white-space: nowrap;
+}
+
+/* Mobile-specific safeguard */
+@media (max-width: 250px) {
+  .logo {
+    margin-bottom: 0.75rem;
+  }
+
+  .logo-img {
+    max-height: 150px;
+  }
+
+  .name {
+    font-size: 2.2rem;
+    line-height: 1.2;
+  }
+}
+
+
 body {
   margin: 0;
   font-family: var(--font-body);
